@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Martel Sans", sans-serif;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: #232323;
+}
+
+.page1 {
+  height: 100%;
+  width: 100%;
+  background: url(https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-color: #232323;
+  min-height: 37.5rem;
+}
+.page1 .overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.page1 .content {
+  padding: 0 10%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Navbar */
+
+.main .navbar {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .navbar .logo {
+  height: 3.75rem;
+  width: 12.5rem;
+}
+.main .navbar .logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(0.7);
+}
+.main .navbar .navBtns {
+  height: 80%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lang {
+  height: 2.188rem;
+  width: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0f0f;
+  border: 2px solid #fff;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.lang select {
+  font-size: 0.875rem;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 0.625rem;
+  text-align: center;
+}
+
+.main .navbar .navBtns button {
+  font-size: 0.875rem;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  height: 2.5rem;
+  width: 4.375rem;
+  background-color: #ff1621;
+  border-radius: 0.313rem;
+  margin-left: 0.625rem;
+  font-weight: 700;
+}
+
+/* Navbar end */
+
+/* Content info */
+
+.content_info {
+  margin-top: 10rem;
+  text-align: center;
+}
+.content_info h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.content_info p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.625rem 0;
+}
+.content_info h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.startedForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.625rem;
+  position: relative;
+}
+.startedForm input {
+  background-color: #160f1c;
+  border: 0;
+  outline: 0;
+  height: 3.5rem;
+  width: 40%;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.313rem;
+  border: 1px solid #ffffff4d;
+}
+.startedForm button {
+  background-color: #ff1621;
+  border: 0;
+  outline: 0;
+  height: 3.5rem;
+  font-weight: 700;
+  width: 16%;
+  text-align: center;
+  font-size: 1.25rem;
+  border-radius: 0.313rem;
+  margin-left: 0.625rem;
+  padding: 0.313rem 0.625rem;
+}
+/* Content info end */
+
+.divider {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  background-color: rgb(35, 35, 35);
+  bottom: -0.5rem;
+  z-index: 2;
+}
+
+/* page2  */
+
+.page2 {
+  height: 100%;
+  width: 100%;
+  background-color: #232323;
+  position: relative;
+  padding-top: 0.5rem;
+}
+.page2 .content {
+  display: flex;
+  align-items: center;
+  padding: 3.5rem 10%;
+  background-color: #000;
+  position: relative;
+  z-index: 1;
+}
+.page2 .content .text {
+  flex-basis: 60%;
+  width: 100%;
+}
+.page2 .content .text h2 {
+  font-size: 50px;
+  font-weight: 900;
+}
+.page2 .content .text p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  width: 80%;
+}
+.page2 .content .feature {
+  flex-basis: 40%;
+  width: 100%;
+  z-index: 1;
+}
+.page2 .content .feature .feature_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.page2 .content .feature .feature_img img {
+  width: 100%;
+}
+.page2 .content .feature .video {
+  height: 100%;
+  width: 100%;
+  max-height: 54%;
+  max-width: 73%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: -1;
+}
+
+#cont2 .card {
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  /* left: 50%; */
+  bottom: 8%;
+  border: 2px solid rgba(28, 28, 28, 0.7);
+  width: 50%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  border-radius: 0.75rem;
+  justify-content: space-between;
+}
+#cont2 .card .card_img {
+  width: 20%;
+}
+#cont2 .card .card_name {
+  font-size: 1rem;
+}
+#cont2 .card .card_name .line2 {
+  color: royalblue;
+  line-height: 0.5;
+}
+#cont2 .card .card_ani {
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif);
+  height: 3rem;
+  width: 3rem;
+  background-size: 100%;
+}
+#cont3 .video {
+  top: 35%;
+  max-width: 66%;
+  max-height: 56%;
+}
+#cont2,
+#cont4 {
+  flex-direction: row-reverse;
+}
+/* page2 end */
+
+/* Faq */
+
+.faq-cont {
+  position: relative;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.faq-cont h1 {
+  font-size: 3rem;
+  font-style: 900px;
+  margin-bottom: 1rem;
+}
+.accordian_cont {
+  width: 70%;
+}
+.accordian_cont .acc_item {
+  margin-bottom: 0.625rem;
+}
+.accordian_cont .acc_item label {
+  width: 100%;
+  display: block;
+  padding: 0.938rem 1.875rem;
+  font-size: 1.375rem;
+  margin-bottom: 0.063rem;
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.accordian_cont .acc_item label:hover {
+  background-color: #3f3b3b;
+}
+.accordian_cont .acc_item label i {
+  transition: all ease 0.3s;
+}
+.accordian_cont .acc_item .info {
+  background-color: #2d2d2d;
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  height: 0;
+  padding: 0 1.875rem 0 1.875rem;
+  transition: height ease 0.5s;
+  overflow: hidden;
+}
+
+.accordian_cont .acc_item input {
+  display: none;
+}
+.accordian_cont .acc_item input:checked ~ .info {
+  height: auto;
+  padding-top: 0.938rem;
+}
+.accordian_cont .acc_item input:checked ~ label i {
+  transform: rotate(45deg);
+}
+/* Faq end */
+
+#bottom {
+  padding: 2rem 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#bottom button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  position: relative;
+  height: 60vh;
+  background-color: #000;
+  padding: 2rem 10%;
+}
+.footer h4 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  margin-bottom: 1.875rem;
+  margin-top: 0.625rem;
+}
+.footer_inn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.875rem;
+}
+.footer_inn .footer_item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  font-size: 0.75rem;
+}
+.footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 1200px) {
+  .startedForm button {
+    font-size: 1rem;
+    /* background-color: rebeccapurple; */
+  }
+}
+@media (max-width: 1100px) {
+  .page1 .content {
+    padding: 0;
+  }
+}
+@media (max-width: 850px) {
+  .startedForm {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main .navbar .navBtns .lang select {
+    display: none;
+  }
+  .main .navbar .navBtns input {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  .main .navbar .navBtns button {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  .content_info h1 {
+    font-size: 2rem;
+  }
+  .content_info p {
+    font-size: 1rem;
+  }
+  .content_info h3 {
+    font-size: 0.8rem;
+  }
+  .page2 .content {
+    flex-direction: column;
+  }
+  .page2 .content .text h2 {
+    font-size: 2.5rem;
+  }
+  .page2 .content .text p {
+    font-size: 1rem;
+  }
+  #cont2,
+  #cont4 {
+    flex-direction: column;
+  }
+}
